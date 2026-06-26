@@ -14,7 +14,7 @@ This repository contains all the labs for the INF2004 module, consolidated into 
 ## Lab Descriptions
 
 ### [LAB 1: Microcontroller and its Development Environment](./LAB1/)
-Familiarize yourself with the development environment for the Raspberry Pi Pico W. Setting up the Pico C/C++ SDK and getting started with the board.
+Familiarise yourself with the development environment for the Raspberry Pi Pico W, including setting up the Pico C/C++ SDK and getting started with the board.
 
 ### [LAB 2: GPIO and Digital Communication](./LAB2/)
 Learn to configure General Purpose Input/Output (GPIO) pins as inputs and outputs, and understand how to use library functions for digital communication.
@@ -26,7 +26,7 @@ Explore the differences between polling and interrupts, and learn how to configu
 Configure and implement Pulse Width Modulation (PWM) and Analog-to-Digital Converters (ADC) on the Raspberry Pi Pico.
 
 ### [LAB 5: FreeRTOS & Sensor Filtering Algorithm](./LAB5/)
-Configure and implement FreeRTOS on the Raspberry Pi Pico, utilizing features such as Task Creation and Message Buffers, along with implementing a sensor filtering algorithm.
+Configure and implement FreeRTOS on the Raspberry Pi Pico, utilising features such as Task Creation and Message Buffers, and implement a sensor filtering algorithm.
 
-### [LAB 6: OPTIMISATION & DEBUGGING](./LAB6/)
-Implement various code optimization methods and configure/use a debugger for the Raspberry Pi Pico to effectively troubleshoot embedded applications.
+### [LAB 6: Optimisation & Debugging](./LAB6/)
+Implement various code optimisation methods and configure/use a debugger for the Raspberry Pi Pico to effectively troubleshoot embedded applications.
