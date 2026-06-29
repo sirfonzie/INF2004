@@ -12,6 +12,13 @@ Before writing code, ensure your hardware is wired correctly.
 
 ## 2. Writing the Driver
 
+### Function Naming Conventions
+When developing a device driver, a clean and consistent naming convention for your functions is crucial for maintainability and readability. Standardizing your function names helps users of your driver immediately understand their purpose. Common conventions include:
+- **`[device]_init()`**: Initializes the hardware, configures pins, and sets up initial states (e.g., `button_init()`).
+- **`[device]_read()` / `[device]_get()`**: Retrieves data or reads the current state from the device (e.g., `button_get_state()`).
+- **`[device]_write()` / `[device]_set()`**: Sends data or changes the configuration on the device (e.g., `led_set_brightness()`).
+- **`[device]_deinit()`**: Cleans up resources, disables interrupts, and powers down the device safely when it's no longer needed.
+
 ### The Polling Approach (Basic)
 The simplest way to check a button is to constantly read its state in a loop ("polling"). Because mechanical buttons "bounce" (generate multiple rapid signals on a single press), we need a **debounce** mechanism.
 

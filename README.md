@@ -10,6 +10,7 @@ This repository contains all the labs for the INF2004 module, consolidated into 
 - [LAB 4: PWM & ADCs](./LAB4/)
 - [LAB 5: FreeRTOS & Sensor Filtering Algorithm](./LAB5/)
 - [LAB 6: OPTIMISATION & DEBUGGING](./LAB6/)
+- [GUIDE: Device Driver Development](./GUIDE_DeviceDriver/)
 
 ## Lab Descriptions
 
@@ -30,3 +31,6 @@ Configure and implement FreeRTOS on the Raspberry Pi Pico, utilising features su
 
 ### [LAB 6: Optimisation & Debugging](./LAB6/)
 Implement various code optimisation methods and configure/use a debugger for the Raspberry Pi Pico to effectively troubleshoot embedded applications.
+
+### [GUIDE: Device Driver Development](./GUIDE_DeviceDriver/)
+A comprehensive guide and reference implementation for writing efficient, interrupt-driven device drivers on embedded systems.
