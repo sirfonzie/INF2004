@@ -136,9 +136,9 @@ You can also use the **Visual Studio Code Pico W extension** to build and flash 
 
 ### **Steps:**
 1. **Open Visual Studio Code.**
-2. Ensure the [**Pico W extension**](/img/raspberry_pico_ext.png) is installed.
-3. Click on the [**Pico W icon**](/img/ext_icon.png) in the sidebar.
-4. Click on [**"New Project From Example"**](/img/project_example.png) and select blinky as your first project follow the setup instructions.
+2. Ensure the **Pico W extension** is installed.
+3. Click on the **Pico W icon** in the sidebar.
+4. Click on **"New Project From Example"** and select blinky as your first project follow the setup instructions.
 5. Click on the **"Build"** button to compile your files.
 6. Click on the **"Flash"** button to upload your files to the Pico W.
 
@@ -227,13 +227,13 @@ Ensure you select the right application when starting Visual Studio Code, as two
 
 ![Screenshot of Pico - Visual Studio Code](/LAB1/img/pico_vsc.png)
 
-Once "Pico - Visual Studio Code" (VSCode) is started, click the [CMake](/img/cmake.png) icon and select the sample code you want to work on. In this example, we will use the [Hello World](https://github.com/raspberrypi/pico-examples/tree/master/hello_world/usb) example. The following [video](https://www.youtube.com/watch?v=NPwoflT_bB0) demonstrates how you get started with VSCode. Note that we are using the hello_usb version of the code. This allows the USB connection between the pico and the PC/laptop to become a virtual UART connection, which can be used together with printf (for debugging purposes).
+Once "Pico - Visual Studio Code" (VSCode) is started, click the [CMake](img/cmake.png) icon and select the sample code you want to work on. In this example, we will use the [Hello World](https://github.com/raspberrypi/pico-examples/tree/master/hello_world/usb) example. The following [video](https://www.youtube.com/watch?v=NPwoflT_bB0) demonstrates how you get started with VSCode. Note that we are using the hello_usb version of the code. This allows the USB connection between the pico and the PC/laptop to become a virtual UART connection, which can be used together with printf (for debugging purposes).
 
 Now, try to compile and run the [blink](https://github.com/raspberrypi/pico-examples/tree/master/pico_w/wifi/blink) example.
 
 If you are using the Pico W boards, you must make a small amendment to the CMakeLists.txt file. Include "set(PICO_BOARD pico_w)" to line #11. The following [video](https://www.youtube.com/watch?v=sTNtLkoHN58) demonstrates how to make the changes and build a [blink](https://github.com/raspberrypi/pico-examples/tree/master/pico_w/wifi/blink) example for the Pico W. 
 
-![Screenshot of Pico - Visual Studio Code](/LAB1/img/picow_support.png)
+![Screenshot of Pico - Visual Studio Code](img/picow_support.png)
 
 > [NOTE]
 > The normal blink example will only work on a standard Pico (without wireless). This is because the Pico W LED is connected to the WiFi SoC and not directly to the RP2040.
@@ -241,8 +241,6 @@ If you are using the Pico W boards, you must make a small amendment to the CMake
 ## **DOWNLOADING FIRMWARE INTO THE PICO**
 
 Depending on your preferences and requirements, several methods are available to upload firmware to a Raspberry Pi Pico microcontroller board. Here is a brief overview of two of the most common methods:
-
-<img width="835" height="625" alt="image" src="https://github.com/user-attachments/assets/3d1be0db-e686-44a9-ab1c-2460425ecf4b" />
 
 
 1. **Drag and Drop (Mass Storage Device):**
@@ -270,7 +268,7 @@ If you encounter a 'build not found' error, ensure that the Pico SDK is correctl
 
 ## **THE BIG PICTURE**
 The figure below illustrates the entire procedure.
-![Built Overview](/LAB1/img/overview.png)
+![Built Overview](img/overview.png)
 
 
 ## **TASK — Predict, then run**

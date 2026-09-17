@@ -36,7 +36,7 @@ PWM slices are hardware modules on the Raspberry Pi Pico designed to generate PW
 
 The RP2040 PWM block has eight identical slices, where each slice can drive two PWM output signals or measure the frequency or duty cycle of an input signal. This gives a total of up to 16 controllable PWM outputs. All 30 GPIO pins can be driven by the PWM block, as shown below.
 
-<img src="/img/pwmgpio.png" width=100% height=100%>
+<img src="img/pwmgpio.png" width=100% height=100%>
 
 **How PWM Slices Work:**
 
@@ -64,7 +64,7 @@ The following code [hello_pwm](https://github.com/raspberrypi/pico-examples/blob
 
 The L298N module is a high-power motor driver module for driving DC and stepper motors. This module comprises an L298 motor driver IC and a 78M05 5V regulator. This module can control up to two DC motors with directional and speed control. The module's datasheet can be found at the following [link](https://components101.com/modules/l293n-motor-driver-module). 
 
-<img src="/img/l298n_pinout.png" width=30% height=30%>
+<img src="img/l298n_pinout.png" width=30% height=30%>
 
 HiBit. (2023). *L298N motor driver pinout diagram* Retrieved from [here](https://components101.com/modules/l293n-motor-driver-module) 
 
@@ -72,11 +72,11 @@ https://cdn.hibit.dev/images/posts/2023/schemas/l298n_pinout.png
 
 There are two ways for this module to control the speed of the motor. An easier way would be to use a jumper across ENA and ENB to fix the voltage to the maximum. However, removing the jumper and connecting the pin to a PWM source would facilitate controlling the motor’s speed. PWM is a widely used technique to control the speed of DC motors, including those used in robotics and other applications.
 
-<img src="/img/l298npico.png" width=100% height=100%>
+<img src="img/l298npico.png" width=100% height=100%>
 
 Again, we can use the [hello_pwm](https://github.com/raspberrypi/pico-examples/blob/master/pwm/hello_pwm/hello_pwm.c) code with some changes to demonstrate how PWM can control the motor speed using the L298N motor controller. Connect the motor controller as follows and observe how fast the motor turns.
 
-An alternative image of connecting them can be seen [here](/img/motorconnection.jpg).
+An alternative image of connecting them can be seen [here](img/motorconnection.jpg).
 
 The following changes are required:
 1. change `gpio_set_function(0, GPIO_FUNC_PWM);` --> `gpio_set_function(2, GPIO_FUNC_PWM);`
@@ -303,7 +303,7 @@ The IR line sensor is a reflective sensor that includes an infrared emitter and 
 
 The IR sensor depicted below features both analog and digital outputs. The digital output alternates between high and low based on the infrared light's reflection, with a threshold set via a potentiometer determining the state. However, in this lab, we will exclusively utilize the Analog output (A), which provides a continuous signal proportional to the intensity of the reflected IR light. Subsequently, we will employ the ADC to convert this analog signal into a digital value, enabling precise measurement and offering a more comprehensive range of information compared to the binary high-low output of the digital mode.
 
-<img src="/img/linepico.png" width=100% height=100%>
+<img src="img/linepico.png" width=100% height=100%>
 
 Again, we can re-use the adc_console code to demonstrate how ADC can be used to obtain the analog signal from the IR-based sensor and convert it into a digital format. Connect the IR sensor as follows and observe the data received via the serial monitor.
 
@@ -311,7 +311,7 @@ Again, we can re-use the adc_console code to demonstrate how ADC can be used to 
 
 Configure a PWM signal at **20 Hz with a 50% duty cycle on GP0**, feed it into the **ADC on GP26**, and sample it with a **timer interrupt**. You will need a jumper wire from GP0 to GP26. The output should look as follows:
 
-<img src="/img/ex4.png" width=100% height=100%>
+<img src="img/ex4.png" width=100% height=100%>
 
 ### Then: sample it twice, and explain the difference
 
